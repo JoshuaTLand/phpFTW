@@ -1,5 +1,5 @@
 # phpFTW
-A simple and light weight framework for simple php development
+A simple and light weight framework for basic php development
 
 ## Basics
 1) All requests are rerouted through the root index.php
