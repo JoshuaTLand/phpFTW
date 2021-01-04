@@ -1,0 +1,7 @@
+SetEnv ENVIRONMENT dev
+
+RewriteEngine On
+RewriteBase /
+
+# Rewrite anything that ends in php (except /index.php) or doesn't contain a period in the path (aka a route; aka not the query string) to /index.php
+RewriteRule ^(?!index\.php)((.+\.php)|([^\.]+))$ /index.php [QSA,L]
