@@ -8,6 +8,7 @@ A simple and light weight framework for basic php development
 2) Clone the repo
 3) Set the apache htdocs location to the repo directory  
     a) https://stackoverflow.com/questions/18902887/how-to-configuring-a-xampp-web-server-for-different-root-directory
+4) If using a DB, add the connection information to the settings file
 
 ## Basics
 1) All requests are rerouted through the root index.php
