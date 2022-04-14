@@ -5,10 +5,13 @@ A simple and light weight framework for basic php development
 1) Install an amp stack locally  
     a) https://bitnami.com/stack/wamp  
     b) https://www.apachefriends.org/index.html
-2) Clone the repo
-3) Set the apache htdocs location to the repo directory  
+2) Install Composer locally  
+    a) https://thecodedeveloper.com/install-composer-windows-xampp/  
+    b) https://getcomposer.org/download/  
+3) Clone the repo
+4) Set the apache htdocs location to the repo directory  
     a) https://stackoverflow.com/questions/18902887/how-to-configuring-a-xampp-web-server-for-different-root-directory
-4) If using a DB, add the connection information to the settings file
+5) If using a DB, add the connection information to the settings file
 
 ## Basics
 1) All requests are rerouted through the root index.php
