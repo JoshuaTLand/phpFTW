@@ -1,6 +1,7 @@
 <?php
 
 namespace phpFTW\system;
+use phpFTW\controllers;
 
 class loader{
 	
@@ -37,9 +38,6 @@ class loader{
 
 		if(file_exists($controllerFile)){
 			
-			require_once("system/controller_base.php");
-			require_once($controllerFile);
-			
 			$controllerName = $this->getAfterSlash($controller);
 			if(!empty($controllerName)){
 				$controllerName = $controllerName."_controller";
@@ -48,6 +46,7 @@ class loader{
 				$controllerName = $controller."_controller";
 			}
 			
+			$controllerName = 'phpFTW\\controllers\\'.$controllerName;
 			$controllerClass = new $controllerName($this);
 			
 			if(method_exists($controllerClass, $method)){

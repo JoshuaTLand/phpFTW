@@ -1,5 +1,7 @@
 <?php
 	
+	namespace phpFTW\controllers;
+
 	class controller_base{
 	
 		public $loader;

@@ -1,4 +1,5 @@
 <?php
+namespace phpFTW\controllers;
 
 class index_controller extends controller_base{
 
