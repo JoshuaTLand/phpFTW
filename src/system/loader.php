@@ -1,6 +1,6 @@
 <?php
 
-namespace system;
+namespace phpFTW\system;
 
 class loader{
 	
@@ -96,7 +96,7 @@ class loader{
 			
 		$path = $givenPath;
 		
-		if(array_key_exists($givenPath, $this->config->paths)){
+		if(isset($this->config) && array_key_exists($givenPath, $this->config->paths)){
 			$path = $this->config->paths[$givenPath];
 		}
 		
