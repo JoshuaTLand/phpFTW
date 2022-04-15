@@ -3,7 +3,7 @@ A simple and light weight framework for basic php development
 
 ## Local Setup
 1) Install an amp stack locally (this setup assumes xampp but other stacks should work as well)  
-    b) https://www.apachefriends.org/index.html
+    a) https://www.apachefriends.org/index.html
 2) Clone the repo
 3) Set the apache htdocs location to the repo directory  
     a) https://stackoverflow.com/questions/18902887/how-to-configuring-a-xampp-web-server-for-different-root-directory
@@ -13,7 +13,8 @@ A simple and light weight framework for basic php development
     b) https://getcomposer.org/download/
 6) From the repo directoy  
     a) run `composer dump-autoload` from the repo directory to create the autoloader fles  
-    b) run `composer install` to setup necesarry dependencies  
+    b) run `composer install` to setup necesarry dependencies
+    	- This should create a `vendor/` folder within `phpFTW/` 
 
 
 ## Basics
