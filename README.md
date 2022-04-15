@@ -2,7 +2,7 @@
 A simple and light weight framework for basic php development
 
 ## Local Setup
-1) Install an amp stack locally (this setup assumes xampp but other stacks should work as well) 
+1) Install an amp stack locally (this setup assumes xampp but other stacks should work as well)  
     b) https://www.apachefriends.org/index.html
 2) Clone the repo
 3) Set the apache htdocs location to the repo directory  
@@ -26,5 +26,5 @@ A simple and light weight framework for basic php development
 
 ## Testing
 1) Navigate to the repo folder
-2) Run `.\vendor\bin\phpunit .\test\`
+2) Run `.\vendor\bin\phpunit .\test\`  
 	a) Alternatively, you can add `phpFTW\vendor\bin\` to your PATH and run `phpunit .\test\`
