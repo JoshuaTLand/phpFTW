@@ -2,8 +2,7 @@
 A simple and light weight framework for basic php development
 
 ## Local Setup
-1) Install an amp stack locally  
-    a) https://bitnami.com/stack/wamp  
+1) Install an amp stack locally (this setup assumes xampp but other stacks should work as well) 
     b) https://www.apachefriends.org/index.html
 2) Clone the repo
 3) Set the apache htdocs location to the repo directory  
