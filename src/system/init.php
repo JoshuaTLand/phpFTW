@@ -9,27 +9,12 @@ $docRoot = rtrim($docRoot, DIRECTORY_SEPARATOR);
 define("DOCROOT", $docRoot.DIRECTORY_SEPARATOR);
 
 
-// SETUP THE AUTOLOADER
-spl_autoload_register(function ($class) {
-	$file = str_replace("\\", DIRECTORY_SEPARATOR, $class).'.php';
-	$file = str_replace("/", DIRECTORY_SEPARATOR, $file);
-	$file = DOCROOT.$file;
-	
-	if (file_exists($file)) {
-		require_once($file);
-		return true;
-	}
-	return false;
-});
+require '../vendor/autoload.php';
+$logger = new phpFTW\system\logger();
 
-
-// SETUP THE SYSTEM OBJECTS
-require_once("system".DIRECTORY_SEPARATOR."logger.php");
-$logger = new logger();
-
-$config = new system\config();
-$dbi = new system\dbi();	
-$loader = new system\loader();
+$config = new phpFTW\system\config();
+$dbi = new phpFTW\system\dbi();	
+$loader = new phpFTW\system\loader();
 
 $logger->setLogLevel($config->logLevel);
 error_reporting($config->errorLevel);

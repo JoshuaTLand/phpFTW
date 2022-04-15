@@ -1,5 +1,7 @@
 <?php
 
+namespace phpFTW\system;
+
 class logger {
 
 	public $log;
