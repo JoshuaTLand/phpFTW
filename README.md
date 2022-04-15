@@ -12,9 +12,9 @@ A simple and light weight framework for basic php development
 5) Install Composer locally  
     a) https://thecodedeveloper.com/install-composer-windows-xampp/  
     b) https://getcomposer.org/download/
-6) From the repo directoy
-    a) run `composer dump-autoload` from the repo directory to create the autoloader fles
-    b) run `composer install` to setup necesarry dependencies
+6) From the repo directoy  
+    a) run `composer dump-autoload` from the repo directory to create the autoloader fles  
+    b) run `composer install` to setup necesarry dependencies  
 
 
 ## Basics
