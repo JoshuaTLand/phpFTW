@@ -22,7 +22,7 @@ class engine {
 	}
 
 	private function prepareRequest($request){
-		$request = strtok($_SERVER["REQUEST_URI"], '?');
+		$request = strtok($request, '?');
 		$request = ltrim($request, '/');
 		$request = rtrim($request, '/');
 		return $request;
