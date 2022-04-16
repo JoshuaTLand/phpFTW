@@ -11,16 +11,15 @@
 		define("ENV", "default");
 	}
 	
-	
-	// Run setup
-	require_once("system/init.php");
-	
-	// Prepare request
-	$request = strtok($_SERVER["REQUEST_URI"], '?');
-	$request = ltrim($request, '/');
-	$request = rtrim($request, '/');
+	// SETUP THE ENVIRONMENT
+	date_default_timezone_set("America/New_York");
 
-	// Load requested resource
-	$loader->loadPath($request);
+	$docRoot = str_replace('\\', DIRECTORY_SEPARATOR, $_SERVER['DOCUMENT_ROOT']);
+	$docRoot = str_replace('/', DIRECTORY_SEPARATOR, $docRoot);
+	$docRoot = rtrim($docRoot, DIRECTORY_SEPARATOR);
+	define("DOCROOT", $docRoot.DIRECTORY_SEPARATOR);
+
+	require '../vendor/autoload.php';
 	
-	$logger->log->debug("Finished loading request for ".$_SERVER["REQUEST_URI"]);
+	$phpFTW = new phpFTW\system\engine();	
+	$phpFTW->run($_SERVER["REQUEST_URI"]);

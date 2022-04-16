@@ -8,10 +8,8 @@ class dbi{
 	private $logger;
 	private $dbh;
 	
-	function __construct(){
-		global $config;
-		global $logger;
-		
+	function __construct($config, $logger){
+
 		$this->config = $config;
 		$this->logger = $logger;
 		
