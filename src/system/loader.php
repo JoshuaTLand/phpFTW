@@ -9,15 +9,10 @@ class loader{
 	public $logger;
 	public $dbi;
 	
-	function __construct(){
-		global $config;
-		global $logger;
-		global $dbi;
-		
+	function __construct($config, $logger, $dbi){
 		$this->config = $config;
 		$this->logger = $logger;
-		$this->dbi = $dbi;
-	
+		$this->dbi = $dbi;	
 	}
 	
 	public function loadPath($path){
