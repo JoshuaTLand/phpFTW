@@ -1,5 +1,5 @@
 # phpFTW
-A simple and light weight framework for basic php development
+A simple and lite weight mvc framework for basic php development
 
 ## Local Setup
 1) Install an amp stack locally (this setup assumes xampp but other stacks should work as well)  
